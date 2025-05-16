@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify - Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Clothify</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html" class="active-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-container">
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-items">
+        <!-- Cart items rendered here -->
+      </div>
+      <div id="cart-summary" class="cart-summary">
+        <!-- Total price and checkout button -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clothify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

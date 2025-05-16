@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout - Your Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Shop - Checkout</h1>
+    <nav>
+      <a href="shop.html">Shop</a> | 
+      <a href="cart.html">Cart</a> | 
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <section class="order-summary">
+      <h2>Order Summary</h2>
+      <div id="order-items"></div>
+      <h3>Total: $<span id="order-total">0.00</span></h3>
+    </section>
+
+    <section class="checkout-form">
+      <h2>Shipping & Payment Information</h2>
+      <form id="checkout-form" novalidate>
+        <label>
+          Full Name:
+          <input type="text" id="fullName" name="fullName" required />
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" name="email" required />
+        </label>
+        <label>
+          Address:
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </label>
+        <label>
+          Payment Method:
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">Select</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+          </select>
+        </label>
+        <div id="loading-spinner" class="hidden">Processing your order...</div>
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="order-message" class="hidden"></p>
+      <button id="back-to-shop" class="hidden">Back to Shop</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothify - Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Clothify</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active-link">Shop</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-intro">
+      <h1>Shop Our Collection</h1>
+      <p>Browse by category:</p>
+<div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="t-shirts">T-Shirts</button>
+  <button class="filter-btn" data-category="jeans">Jeans</button>
+  <button class="filter-btn" data-category="jackets">Jackets</button>
+  <button class="filter-btn" data-category="shoes">Shoes</button>
+  <button class="filter-btn" data-category="hoodies">Hoodies</button>
+  <button class="filter-btn" data-category="dresses">Dresses</button>
+  <button class="filter-btn" data-category="accessories">Accessories</button>
+</div>
+
+    </section>
+
+    <section class="product-grid" id="product-grid">
+      <!-- JS renders products here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clothify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

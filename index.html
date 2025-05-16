@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clothes Ecommerce - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Clothify</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Clothify</h1>
+      <p>Your one-stop shop for trendy clothes!</p>
+      <a href="shop.html" class="btn-primary">Shop Now</a>
+    </section>
+    <section class="hero-video">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="videos/4820383-hd_1080_1920_25fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay">
+    <h1>Welcome to Trendy Threads</h1>
+    <p>Discover the latest fashion trends for all seasons</p>
+    <a href="shop.html" class="hero-btn">Shop Now</a>
+  </div>
+</section>
+
+
+    <section class="featured-section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="featured-grid">
+      <div class="product-card" data-id="1" data-name="Classic T-Shirt" data-price="19.99" data-image="images/product1.jpg">
+        <img src="images/pexels-photo-32014243.webp" alt="T-Shirt" />
+        <h3>Classic T-Shirt</h3>
+        <p>$19.99</p>
+      </div>
+      <div class="product-card" data-id="2" data-name="Cozy Hoodie" data-price="39.99" data-image="images/product2.jpg">
+        <img src="images/pexels-photo-7026777.webp" alt="Hoodie" />
+        <h3>Cozy Hoodie</h3>
+        <p>$39.99</p>
+          </div>
+      <div class="product-card" data-id="4" data-name="New Balance Sneakers" data-price="89.99" data-image="images/product4.jpg">
+        <img src="images/pexels-photo-6050914.webp" alt="Sneakers" />
+        <h3>Trendy Jacket</h3>
+        <p>$89.99</p>
+      </div>
+  </section>
+ <section class="newsletter">
+  <div class="newsletter-content">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get updates on new arrivals, exclusive offers, and special discounts — straight to your inbox!</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="subscribe-message" class="hidden">Thank you for subscribing!</p>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clothify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  const form = document.getElementById('newsletter-form');
+  const message = document.getElementById('subscribe-message');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    form.reset();
+    message.classList.remove('hidden');
+    setTimeout(() => message.classList.add('hidden'), 3000);
+  });
+</script>
+
+
+</body>
+</html>
