@@ -32,3 +32,13 @@ Check out the live deployed version of the website here:
 - JavaScript (DOM manipulation, event handling, localStorage)
 
 ## 📦 Folder Structure
+├── index.html
+├── shop.html
+├── product.html
+├── cart.html
+├── checkout.html
+├── styles.css
+├── script.js
+└── assets/
+└── images/
+└── videos/
